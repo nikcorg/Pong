@@ -446,4 +446,4 @@ function init() {
     }
 }
 
-eindow.addEventListener('load', init, false);
+window.addEventListener('load', init, false);
