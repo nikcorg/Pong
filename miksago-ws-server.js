@@ -114,19 +114,8 @@ function handleConnection(connection) {
             }
             message = wsMessage.utf8Data;
         }
-        console.log((new Date()) + " Received Message: " + message);
 
-        //connection.sendUTF(message);
-        /*
-        if(miksagoServer.broadcast)miksagoServer.broadcast('broadcastUTF0:'+message);
-        if(wsRequest.broadcastUTF)wsRequest.broadcastUTF('broadcastUTF1:'+message);
-        */
-        if(miksagoServer.broadcast) {
-            //connection.send = miksagoServer.broadcast;
-        }
-        if(wsRequest.broadcastUTF) {
-            //connection.send = wsRequest.broadcastUTF;
-        }
+        console.log((new Date()) + " Received Message: " + message);
 
         firstConnect(message, connection);
     });
