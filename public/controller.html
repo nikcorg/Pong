@@ -166,7 +166,7 @@
     var hasWebSocket = 'WebSocket' in window,
         hasMotionEv = 'DeviceMotionEvent' in window;
 
-    if (true || hasWebSocket && hasMotionEv) {
+    if (hasWebSocket && hasMotionEv) {
         window.addEventListener('load', init, false);
     } else {
         window.addEventListener('load', unsup, false);
