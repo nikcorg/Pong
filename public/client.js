@@ -329,8 +329,7 @@ Scene.prototype = {
             this.objects[ob].draw(this.ctx);
         }
 
-        setTimeout(this.render.bind(this), 1000 / 30);
-        //window.requestAnimFrame(this.render.bind(this));
+        window.requestAnimFrame(this.render.bind(this));
     }
 
 };
@@ -370,7 +369,6 @@ function init() {
 
             scene.removeObjects();
             scene.addObject(text).addObject(paddleRight).addObject(paddleLeft).addObject(ball);
-            scene.render();
 
             this.removeEventListener('message', setup, false);
             this.addEventListener('message', update, false);
@@ -412,8 +410,6 @@ function init() {
             }
 
             log(e.data);
-
-            //scene.render();
         } catch (err) {
             console.log('parse error', err, e.data);
         }
@@ -448,8 +444,6 @@ function init() {
     function onerror() {
         connect();
     }
-
-    scene.render();
 }
 
-window.addEventListener('load', init, false);
+eindow.addEventListener('load', init, false);
