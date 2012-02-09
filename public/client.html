@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+    <title>PONG Projection</title>
+    <script>
+        window.requestAnimFrame = (function(){
+          return  window.requestAnimationFrame       ||
+                  window.webkitRequestAnimationFrame ||
+                  window.mozRequestAnimationFrame    ||
+                  window.oRequestAnimationFrame      ||
+                  window.msRequestAnimationFrame     ||
+                  function( callback ){
+                    window.setTimeout(callback, 1000 / 60);
+                  };
+        }());
+    </script>
+    <script src="client.js"></script>
+    <style>
+        body {
+            margin: 0;
+            font-size: 100%;
+            font-family: sans-serif;
+        }
+        canvas {
+            margin: 10px 10px;
+        }
+        h1, h2, p {
+            text-align: center;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        code {
+            color: red;
+            font-weight: bold;
+            font-size: 1.2em;
+            padding: 0 10px 0 10px;
+        }
+        img {
+            border: 1px solid black;
+        }
+        div.columns {
+            display: inline;
+            float: left;
+            overflow: hidden;
+            clear: both;
+            width: 100%;
+        }
+        div.column60 {
+            position: relative;
+            display: inline;
+            float: left;
+            width: 60%;
+            padding: 1%;
+            z-index: 2;
+        }
+        div.columns30 {
+            position: relative;
+            display: inline;
+            float: left;
+            width: 30%;
+            padding: 1%;
+            text-align: center;
+            z-index: 1;
+        }
+        img.html5-logo {
+            border: 0;
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pong</h1>
+    <div class="columns">
+        <div class="column60">
+            <canvas width="800" height="600"></canvas>
+        </div>
+        <div class="columns30">
+            <h2>How to play</h2>
+            <img src="instructions.jpg"><br>
+        </div>
+    </div>
+    <p>Tested on <code>iPhone</code> and <code>Nokia N9</code></p>
+    <img class="html5-logo" src="http://www.w3.org/html/logo/badge/html5-badge-h-connectivity-graphics.png">
+    <!--
+    <br>
+    <textarea rows="40" cols="60"></textarea>
+    -->
+</body>
+</html>
