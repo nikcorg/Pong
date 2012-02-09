@@ -7,3 +7,5 @@ The game itself runs server side, two handsets function as controllers and a bro
 The code isn't very beautiful and supporting several versions of the WebSocket required adding a hackish tier to the connection handling. But it worked well enough and got the job done.
 
 There is no running instance of this game.
+
+For module requirements, see https://gist.github.com/1148686
