@@ -9,3 +9,7 @@ The code isn't very beautiful and supporting several versions of the WebSocket r
 There is no running instance of this game.
 
 For module requirements, see https://gist.github.com/1148686
+
+## Why?
+
+The reason for the project was to teach me about node, canvas and websockets. And because it was fun.
