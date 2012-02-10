@@ -18,15 +18,15 @@ There is no running instance of this game, and likely never will be. This was a 
 
 ## To install:
 
-* git clone git@github.com:nikcorg/Pong.git pong
-* cd pong
-* npm install
+* `git clone git@github.com:nikcorg/Pong.git pong`
+* `cd pong`
+* `npm install`
 
 ## To play:
 
 * `node miksago-ws-server.js` will run the server
-* open http://server.com/public/client.html in a browser
-* open http://server.com/public/controller.html in a mobile phone browser
+* open `http://your.box.com/public/client.html` in a browser
+* open `http://your.box.com/public/controller.html` in a mobile phone browser
     * NB! By default you need two players, to play alone in `miksago-ws-server.js:131` set [`playAlone = true`](https://github.com/nikcorg/Pong/blob/master/miksago-ws-server.js#L131).
 
 ## License
