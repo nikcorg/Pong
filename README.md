@@ -14,7 +14,7 @@ The game itself runs server side, two handsets function as controllers and a bro
 
 The code isn't very beautiful, lacks comments, and supporting several versions of the WebSocket required adding a hackish tier to the connection handling. But it worked well enough and got the job done.
 
-There is no running instance of this game.
+There is no running instance of this game, and likely never will be. This was a one-off concept demo which was tons of fun, but will not be maintained or further developed/cleaned up. (Unless you fork it ;-)
 
 ## To install:
 
@@ -28,3 +28,7 @@ There is no running instance of this game.
 * open http://server.com/public/client.html in a browser
 * open http://server.com/public/controller.html in a mobile phone browser
     * NB! By default you need two players, to play alone in `miksago-ws-server.js:131` set [`playAlone = true`](https://github.com/nikcorg/Pong/blob/master/miksago-ws-server.js#L131).
+
+## License
+
+[Creative Commons BY-NC-SA](http://creativecommons.org/licenses/by-nc-sa/3.0/)
