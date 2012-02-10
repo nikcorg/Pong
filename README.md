@@ -27,4 +27,4 @@ There is no running instance of this game.
 
 * open http://server.com/public/client.html in a browser
 * open http://server.com/public/controller.html in a mobile phone browser
-    * NB! By default you need two players, to play alone you'll need to modify the code to create two players on an incoming connection.
+    * NB! By default you need two players, to play alone in `miksago-ws-server.js:131` set [`playAlone = true`](https://github.com/nikcorg/Pong/blob/master/miksago-ws-server.js#L131).
