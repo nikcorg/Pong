@@ -127,7 +127,8 @@ function handleConnection(connection) {
 
 var Projection = require('./projection.js').Projection,
     Ball = require('./ball.js').Ball,
-    Player = require('./player.js').Player;
+    Player = require('./player.js').Player,
+    playAlone = false;
 
 console.log('server started');
 
@@ -156,9 +157,16 @@ function firstConnect(message, sock) {
 
                 case 'player':
                     console.log((new Date()) + ' new player');
+
                     var p = new Player(sock, true);
                     p.onDisconnect(disconnectWhileQueueing);
                     playerConnect(p);
+
+                    if (playAlone) {
+                        p = new Player(sock, true);
+                        p.onDisconnect(disconnectWhileQueueing);
+                        playerConnect(p);
+                    }
                     break;
             }
         } else {
