@@ -1,0 +1,9 @@
+{
+  "name": "pong",
+  "version": "0.0.1",
+  "dependencies": {
+    "websocket": ">= 0.0.1",
+    "websocket-server": ">= 0.0.1",
+    "ws": ">= 0.0.1"
+  }
+}
