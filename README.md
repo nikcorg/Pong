@@ -8,11 +8,11 @@ The reason for the project was to teach me about node, canvas and websockets. An
 
 ## How it works
 
-The game itself runs server side, two handsets function as controllers and a browser as the projection. The state of the game is pushed to the projection on every tick. The controllers notify the server whenever speed changes. Messaging is done over a WebSocket connection.
+The game itself runs server side, two handsets function as controllers and a browser (or several) as the projection. The state of the game is pushed to the projection(s) on every tick. The controllers notify the server whenever speed changes. Messaging is done over a WebSocket connection.
 
 ## Notes
 
-The code isn't very beautiful, lacks comments, and supporting several versions of the WebSocket required adding a hackish tier to the connection handling. But it worked well enough and got the job done.
+The code isn't very beautiful, lacks comments, and supporting several versions of the WebSocket required adding a hackish tier to the connection handling. But it worked well enough and got the job done. Bugs will be present.
 
 There is no running instance of this game, and likely never will be. This was a one-off concept demo which was tons of fun, but will not be maintained or further developed/cleaned up. (Unless you fork it ;-)
 
