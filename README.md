@@ -29,6 +29,10 @@ There is no running instance of this game, and likely never will be. This was a 
 * open `http://your.box.com/public/controller.html` in a mobile phone browser
     * NB! By default you need two players, to play alone in `miksago-ws-server.js:131` set [`playAlone = true`](https://github.com/nikcorg/Pong/blob/master/miksago-ws-server.js#L131).
 
+## Further reading
+
+[How I created a Pong-clone using Node.js, Canvas, WebSocket and DeviceOrientation](http://blog.nikc.org/2012/02/11/how-i-created-a-pong-clone-using-node-js-canvas-websocket-and-deviceorientation/).
+
 ## License
 
 [Creative Commons BY-NC-SA](http://creativecommons.org/licenses/by-nc-sa/3.0/)
